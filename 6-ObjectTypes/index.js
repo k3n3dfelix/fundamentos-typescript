@@ -25,4 +25,48 @@ var fusca = {
     wheels: 4
 };
 console.log(fusca);
-//fusca.wheels = 5 ----> não é possivel com o readonly
+var coords = {
+    x: 20
+};
+coords.y = 15;
+var matheus = {
+    name: "Kened",
+    age: 30
+};
+var goku = {
+    name: "Goku",
+    age: 50,
+    superpowers: ["Kamehameha", "Genki Dama"]
+};
+console.log(goku);
+console.log(goku.superpowers);
+var arnold = {
+    name: "Arnold",
+    type: "Shotgun",
+    caliber: 12
+};
+console.log(arnold);
+console.log(arnold.caliber);
+//7 - readyonly array
+var myArray = ["Maça", "Laranja", "Banana"];
+//myArray[3] = "Mamão"
+console.log(myArray);
+myArray.forEach(function (item) {
+    console.log('Fruta: ' + item);
+});
+myArray = myArray.map(function (item) {
+    return "Fruta: ".concat(item);
+});
+console.log(myArray);
+var myNumberArray = [1, 2, 3, 4, 5];
+var myNumberArray2 = [6, 7, 8, 9, 10];
+var anotherUser = ["Kened", 30];
+console.log(anotherUser[0]);
+anotherUser[0] = "João";
+console.log(anotherUser[0]);
+//9 - Tuplas com readonly
+function showNumbers(numbers) {
+    console.log(numbers[0]);
+    console.log(numbers[1]);
+}
+showNumbers([1, 2]);
