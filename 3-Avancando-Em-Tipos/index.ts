@@ -119,3 +119,53 @@ const coordObj: Point={
 }
 
 showCoords(coordObj);
+
+//14 Inteface x Type Alias
+
+interface Person {
+  name:string;
+}
+
+interface Person {
+  age:number;
+}
+
+const somePerson: Person = {name: "Kened", age: 30}
+console.log(somePerson);
+
+type personType ={
+  name:string
+}
+
+//15 Literal Types
+let test: "testando"
+
+test = "testando"
+console.log(test)
+
+function showDirection(direction: "left" | "right" | "center"){
+  console.log(`A direção é ${direction}`);
+}
+
+showDirection("left");
+
+//16 - non null assertion operators
+
+const p = document.getElementById("some-p");
+console.log(p!.innerText);
+
+//17 - Bigint
+
+// let n: bigint
+// n = 1000n
+// console.log(n);
+// console.log(typeof n);
+// console.log(n + 100n);
+
+//18 - Symbol
+
+// let symbolA: symbol = Symbol("a");
+// let symbolB = Symbol("a")
+// console.log(symbolA == symbolB);
+// console.log(symbolA === symbolB);
+

@@ -81,3 +81,27 @@ var coordObj = {
     z: 20
 };
 showCoords(coordObj);
+var somePerson = { name: "Kened", age: 30 };
+console.log(somePerson);
+//15 Literal Types
+var test;
+test = "testando";
+console.log(test);
+function showDirection(direction) {
+    console.log("A dire\u00E7\u00E3o \u00E9 ".concat(direction));
+}
+showDirection("left");
+//16 - non null assertion operators
+var p = document.getElementById("some-p");
+console.log(p.innerText);
+//17 - Bigint
+// let n: bigint
+// n = 1000n
+// console.log(n);
+// console.log(typeof n);
+// console.log(n + 100n);
+//18 - Symbol
+// let symbolA: symbol = Symbol("a");
+// let symbolB = Symbol("a")
+// console.log(symbolA == symbolB);
+// console.log(symbolA === symbolB);
