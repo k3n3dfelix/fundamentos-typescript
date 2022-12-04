@@ -187,3 +187,5 @@ class blogPost implements showTitle {
 const myPost = new blogPost("Hello World");
 
 console.log(myPost.itemTitle())
+
+//10 - Override de métodos
